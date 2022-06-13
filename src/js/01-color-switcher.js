@@ -8,11 +8,12 @@ const stopBtn = document.querySelector("button[data-stop]");
 let timer = null;
 function color() {
     timer = setInterval(() => {body.style.backgroundColor = getRandomHexColor()}, 1000);
-    startBtn.setAttribute("disable", "disable")
+    startBtn.disable = true;
 };
 
 function stoper() {
-    startBtn.removeAttribute("disable");
+    startBtn.disable = false;
+    clearInterval(timer);
 
 };
 
