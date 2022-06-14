@@ -29,6 +29,7 @@ const options = {
 function blockBtn(btn) {
     btn.disabled = true;
 };
+blockBtn(startBtn)
 function unblockBtn(btn) {
     btn.disabled = false;
 };
