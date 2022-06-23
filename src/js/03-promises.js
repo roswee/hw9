@@ -21,7 +21,7 @@ form.addEventListener('submit', handleEvent);
 
 function handleEvent(e) {
   e.preventDefault();
-  for (i = 0; i < amount.value; i++) {
+  for (let i = 0; i < amount.value; i++) {
     setTimeout(() => {
       position = i + 1;
       createPromise(position, delay)
